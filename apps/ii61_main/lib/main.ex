@@ -4,12 +4,11 @@ defmodule II61.Main do
   use Application
 
   def start(_type, _args) do
+    IO.inspect(__MODULE__, label: "Application.start/0")
     IO.inspect(II61.Internal.Connection.version(), label: "InfluxDB version")
     IO.inspect(II61.Internal.Connection.ping(), label: "Ping")
 
-    children = [
-      II61.Internal.Connection
-    ]
+    children = []
 
     opts = [strategy: :one_for_one, name: __MODULE__.Supervisor]
 

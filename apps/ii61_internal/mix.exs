@@ -17,6 +17,7 @@ defmodule II61.Internal.MixProject do
 
   def application do
     [
+      mod: {II61.Internal, []},
       extra_applications: [:logger]
     ]
   end
