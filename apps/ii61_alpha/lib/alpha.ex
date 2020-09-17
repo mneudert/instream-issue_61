@@ -1,12 +1,12 @@
-defmodule II61.Main do
+defmodule II61.Alpha do
   @moduledoc false
 
   use Application
 
   def start(_type, _args) do
     IO.inspect(__MODULE__, label: "Application.start/0")
-    IO.inspect(II61.Internal.Connection.version(), label: "@main InfluxDB version")
-    IO.inspect(II61.Internal.Connection.ping(), label: "@main Ping")
+    IO.inspect(II61.Internal.Connection.version(), label: "@alpha InfluxDB version")
+    IO.inspect(II61.Internal.Connection.ping(), label: "@alpha Ping")
 
     children = []
 
