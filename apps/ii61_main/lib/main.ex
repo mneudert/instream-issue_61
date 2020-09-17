@@ -4,8 +4,8 @@ defmodule II61.Main do
   use Application
 
   def start(_type, _args) do
-    _ = IO.inspect(II61.Internal.Connection.version(), label: "InfluxDB version")
-    :pong = II61.Internal.Connection.ping()
+    IO.inspect(II61.Internal.Connection.version(), label: "InfluxDB version")
+    IO.inspect(II61.Internal.Connection.ping(), label: "Ping")
 
     children = [
       II61.Internal.Connection

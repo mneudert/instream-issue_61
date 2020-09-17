@@ -3,6 +3,7 @@ defmodule II61.Internal.Connection do
 
   use Instream.Connection,
     config: [
-      auth: [username: "instream_test", password: "instream_test"]
+      auth: [username: "instream_test", password: "instream_test"],
+      loggers: []
     ]
 end
