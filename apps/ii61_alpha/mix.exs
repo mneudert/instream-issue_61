@@ -18,7 +18,7 @@ defmodule II61.Alpha.MixProject do
   def application do
     [
       mod: {II61.Alpha, []},
-      extra_applications: [:logger]
+      extra_applications: [:instream, :logger]
     ]
   end
 
