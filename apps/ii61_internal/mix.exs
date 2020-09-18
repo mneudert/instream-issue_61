@@ -24,7 +24,8 @@ defmodule II61.Internal.MixProject do
 
   defp deps do
     [
-      {:instream, "~> 1.0"}
+      {:instream, "~> 1.0"},
+      {:ii61_alpha, in_umbrella: true}
     ]
   end
 end
